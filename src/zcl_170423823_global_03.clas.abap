@@ -22,7 +22,7 @@ CLASS zcl_170423823_global_03 IMPLEMENTATION.
     DATA: carrier_id    TYPE /dmo/carrier_id,
           connection_id TYPE /dmo/connection_id,
           status        TYPE i,
-          flight_date   TYPE dats.
+          flight_date   TYPE d.
 
     TRY.
         connection = NEW #( i_carrier_id    = 'IH'

@@ -11,7 +11,7 @@ CLASS lcl_connection DEFINITION.
         i_carrier_id    TYPE /dmo/carrier_id
         i_connection_id TYPE /dmo/connection_id
         i_status        TYPE i
-        i_flight_date   TYPE dats
+        i_flight_date   TYPE d
       RAISING
         cx_ABAP_INVALID_VALUE.
 
@@ -20,21 +20,21 @@ CLASS lcl_connection DEFINITION.
         i_carrier_id    TYPE /dmo/carrier_id OPTIONAL
         i_connection_id TYPE /dmo/connection_id
         i_status        TYPE i
-        i_flight_date   TYPE dats.
+        i_flight_date   TYPE d.
 
     METHODS get_attributes
       EXPORTING
         e_carrier_id    TYPE /dmo/carrier_id
         e_connection_id TYPE /dmo/connection_id
         e_status        TYPE i
-        e_flight_date   TYPE dats.
+        e_flight_date   TYPE d.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
     DATA carrier_id    TYPE /dmo/carrier_id.
     DATA connection_id TYPE /dmo/connection_id.
     DATA status        TYPE i.
-    DATA flight_date   TYPE dats.
+    DATA flight_date   TYPE d.
 
 ENDCLASS.
 
